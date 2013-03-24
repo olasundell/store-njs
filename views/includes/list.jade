@@ -1,0 +1,9 @@
+h1 Available items
+ul
+each item in shoppingitems
+	li #{item.name}
+		ul
+			li #{item.price}
+			li #{item.quantity}
+	div#add#{item.id}
+		p Add to cart
